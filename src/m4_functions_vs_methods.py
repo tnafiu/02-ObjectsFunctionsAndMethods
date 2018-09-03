@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -81,11 +81,12 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
 
-    turtle3()
+    turtle3('pink', 10)
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
+    try_methods()
 
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
@@ -180,8 +181,14 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    reba = rg.SimpleTurtle()
+    reba.pen = rg.Pen('brown', 5)
+    reba.forward(150)
+    reba.left(90)
+    reba.forward(50)
+    reba.backward(100)
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
