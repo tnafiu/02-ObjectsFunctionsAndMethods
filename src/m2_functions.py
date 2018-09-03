@@ -28,6 +28,7 @@ def main():
     You write the tests per the _TODO_s below.
     """
     triangle_hypotenuse(3, 4)
+    twoturtles('blue', 10)
 
 ###############################################################################
 #
@@ -39,19 +40,17 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-def triangle_hypotenuse(len_a,len_b) :
-    hypotenuse = math.sqrt(((len_a)**2) + ((len_b)**2))
-    print(hypotenuse)
-
 # DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
-###############################################################################
-
+##############################################################################
+def triangle_hypotenuse(len_a, len_b):
+    hypotenuse = math.sqrt((len_a**2) + (len_b**2))
+    print(hypotenuse)
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -67,15 +66,24 @@ def triangle_hypotenuse(len_a,len_b) :
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function and print the returned value,
+# DONE: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+def twoturtles(colour, thickness):
+    window = rg.TurtleWindow()
+    turtle1 = rg.SimpleTurtle()
+    turtle1.pen = rg.Pen('green', thickness)
 
+    turtle2 = rg.SimpleTurtle()
+    turtle2.pen = rg.Pen(colour, 5)
+
+    turtle1.forward(100)
+    turtle2.backward(100)
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
