@@ -42,7 +42,8 @@ def main():
 def triangle_hypotenuse(len_a,len_b) :
     hypotenuse = math.sqrt(((len_a)**2) + ((len_b)**2))
     print(hypotenuse)
-# TODO: 3b.  In main, CALL your function and print the returned value,
+
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
